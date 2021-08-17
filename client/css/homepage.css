@@ -2,4 +2,51 @@
   width: 200px;
 }
 
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#featured-products {
+  color: #0517e8;
+  display: flex;
+  justify-content: center;
+}
+#featured-products div {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffffaa;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+#featured-products div img {
+  border-radius: 5px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+#navigation a {
+  display: inline;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #b32271;
+  width: 100px;
+  transition: 0.5s;
+}
+#navigation a:hover {
+  font-size: 28px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=homepage.css.map */

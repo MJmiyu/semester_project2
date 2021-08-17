@@ -19,4 +19,10 @@ async function getProducts() {
   const products = await get('/products');
   return products;
 }
-export { getUrl, getBanner, getProducts };
+
+async function getProduct(id) {
+  const product = await get('/products/' + id);
+  return product;
+}
+
+export { getUrl, getBanner, getProducts, getProduct };

@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function renderBanner() {
   const banner = await getBanner();
-  const bannerImage = document.getElementById('banner');
-  const bannerUrl = getUrl() + banner.hero_banner.url;
-  bannerImage.src = bannerUrl;
-  console.log(banner);
+
+  const body = document.body;
+  body.style.backgroundImage =
+    "url('" + getUrl() + banner.hero_banner.url + "')";
 }
 
 async function renderFeaturedProducts() {
@@ -31,6 +31,8 @@ async function renderFeaturedProducts() {
 
     const featuredProductImage = document.createElement('img');
     featuredProductImage.className = 'featured-product-image';
+    featuredProductImage.alt =
+      'Hero banner greyscale picture with houses with some colors in red, white and orange tones';
     featuredProductImage.src = getUrl() + featuredProduct.image.url;
 
     const featuredProductDescription = document.createElement('p');

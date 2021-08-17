@@ -1,3 +1,53 @@
+@import 'utility';
+
 .featured-product-image {
   width: 200px;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#featured-products {
+  color: $primary-color;
+  display: flex;
+  justify-content: center;
+  div {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffffaa;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: $font-primary;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  a {
+    display: inline;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: $font-secondary;
+    color: $secondary-color;
+    width: 100px;
+    transition: 0.5s;
+
+    &:hover {
+      // color: $primary-color;
+      font-size: 28px;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+  }
 }
