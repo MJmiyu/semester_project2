@@ -29,17 +29,19 @@ function renderproduct() {
   productImage.src = getUrl() + product.image.url;
 
   const productDescription = document.createElement('p');
+  productDescription.className = 'featured-product-description';
   productDescription.innerText = product.description;
 
   const productPrice = document.createElement('p');
-  productPrice.innerText = product.price;
+  productPrice.className = 'featured-product-price';
+  productPrice.innerText = product.price + ' $';
 
   const cartButton = document.createElement('button');
   cartButton.className = 'cart-button';
 
   const alreadyInCart = existsInCart(product.id);
   if (alreadyInCart) {
-    cartButton.innerText = 'Remove from cart';
+    cartButton.innerText = 'Remove From Cart';
   } else {
     cartButton.innerText = 'Add To Cart';
   }

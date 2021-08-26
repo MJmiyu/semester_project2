@@ -39,7 +39,7 @@ async function renderFeaturedProducts() {
     featuredProductDescription.innerText = featuredProduct.description;
 
     const featuredProductPrice = document.createElement('p');
-    featuredProductPrice.innerText = featuredProduct.price;
+    featuredProductPrice.innerText = featuredProduct.price + ' $';
 
     featuredProductsContainer.appendChild(featuredProductContainer);
     featuredProductContainer.appendChild(featuredProductTitle);

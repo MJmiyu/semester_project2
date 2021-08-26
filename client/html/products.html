@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="../css/products.css" />
     <title>Products</title>
   </head>
@@ -11,11 +15,11 @@
       <a href="homepage.html">Home</a>
       <a href="products.html">Products</a>
       <a href="cart.html">Cart</a>
+      <div id="search-container">
+        <input id="search-input" type="text" />
+        <button id="search-button"><i class="fa fa-search"></i></button>
+      </div>
     </nav>
-    <div id="search-container">
-      <input id="search-input" type="text" placeholder="Search" />
-      <button id="search-button">Search</button>
-    </div>
     <div id="products"></div>
   </body>
   <script type="module" src="../javascript/products.js"></script>

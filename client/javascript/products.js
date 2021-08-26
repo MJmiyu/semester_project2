@@ -48,7 +48,7 @@ function renderProducts() {
     productImage.src = getUrl() + product.image.url;
 
     const productPrice = document.createElement('p');
-    productPrice.innerText = product.price;
+    productPrice.innerText = product.price + ' $';
 
     const detailsButton = document.createElement('button');
     detailsButton.innerText = 'Details';

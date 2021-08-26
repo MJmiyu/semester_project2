@@ -3,3 +3,28 @@ $secondary-color: #b32271;
 
 $font-primary: 'Noto Sans JP', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
+
+body {
+  background-color: #efefef;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  a {
+    display: inline;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $font-secondary;
+    color: $secondary-color;
+    width: 100px;
+    transition: 0.5s;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

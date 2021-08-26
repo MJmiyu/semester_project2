@@ -30,7 +30,8 @@ body {
 }
 
 #navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   margin-bottom: 25px;
   a {
@@ -42,11 +43,9 @@ body {
     color: $secondary-color;
     width: 100px;
     transition: 0.5s;
+    text-align: center;
 
     &:hover {
-      // color: $primary-color;
-      font-size: 28px;
-      font-weight: bolder;
       text-decoration: underline;
     }
   }
