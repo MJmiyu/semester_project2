@@ -1,5 +1,5 @@
 import { getUrl, getProduct } from './api.js';
-import { addToCart, existsInCart, removeFromCart } from './cart.js';
+import { addToCart, existsInCart, removeFromCart } from './localStorage.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   loadProduct();
@@ -62,5 +62,3 @@ function renderproduct() {
 
   console.log(product);
 }
-
-function createButton() {}

@@ -30,8 +30,6 @@ function search() {
 }
 
 function renderProducts() {
-  console.log(searchProducts);
-
   const productsContainer = document.getElementById('products');
   productsContainer.innerHTML = '';
 

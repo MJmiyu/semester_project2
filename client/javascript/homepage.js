@@ -47,6 +47,4 @@ async function renderFeaturedProducts() {
     featuredProductContainer.appendChild(featuredProductDescription);
     featuredProductContainer.appendChild(featuredProductPrice);
   }
-
-  console.log(featuredProducts);
 }
