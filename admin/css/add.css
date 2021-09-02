@@ -1,0 +1,97 @@
+body {
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav a {
+  display: inline;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #b32271;
+  width: 100px;
+  transition: 0.5s;
+  text-align: center;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+#product-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  #product-form {
+    padding: 20px;
+  }
+}
+#product-form > * {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  #product-form > * {
+    width: 100%;
+  }
+}
+#product-form > h3 {
+  margin-bottom: 5px;
+}
+#product-form > textarea {
+  resize: none;
+  border: solid 2px;
+  border-color: #b32271;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+#product-form > button {
+  border: solid 2px;
+  border-color: #b32271;
+  border-radius: 5px;
+  color: #b32271;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#product-form > button:hover {
+  color: limegreen;
+}
+
+input {
+  border: solid 2px;
+  border-color: #b32271;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+#logout {
+  border: none;
+  background: none;
+  color: #b32271;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#logout:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=add.css.map */

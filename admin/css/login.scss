@@ -1,0 +1,43 @@
+@import 'utility';
+
+#form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: $font-primary;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+
+input {
+  border: solid 2px;
+  border-color: $secondary-color;
+  border-radius: 5px;
+  font-family: $font-secondary;
+  outline: none;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background: none;
+  color: $secondary-color;
+  font-size: 18px;
+  font-weight: bolder;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.error {
+  border: 2px solid red;
+}

@@ -5,6 +5,18 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
 
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & > p {
+    text-align: center;
+    font-size: 30px;
+    font-family: $font-primary;
+  }
+
   & > div {
     display: flex;
     flex-direction: column;
@@ -13,21 +25,30 @@
     box-shadow: grey 1px 1px 1px 1px;
     border-radius: 5px;
     background-color: #fefefe80;
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
     & > h2 {
       font-family: $font-primary;
       color: $primary-color;
     }
+
     & > img {
       object-fit: cover;
       max-width: 300px;
       height: 200px;
       border-radius: 5px;
     }
+
     & > p {
       font-family: $font-secondary;
       color: $primary-color;
       font-size: 14px;
     }
+
     & > button {
       font-family: $font-secondary;
       font-size: 18px;
@@ -42,8 +63,28 @@
   }
 }
 
+#checkout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
 #total-price {
   font-size: 26px;
   font-family: $font-secondary;
   color: $primary-color;
+}
+
+#checkout-button {
+  border: none;
+  background: none;
+  color: $secondary-color;
+  font-size: 18px;
+  margin-top: 25px;
+  font-family: $font-secondary;
+  &:hover {
+    text-decoration: underline;
+  }
 }

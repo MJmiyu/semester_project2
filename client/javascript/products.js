@@ -42,15 +42,15 @@ function renderProducts() {
     productTitle.innerText = product.title;
 
     const productImage = document.createElement('img');
-    productImage.className = 'product-image';
-    productImage.src = getUrl() + product.image.url;
+    if (product.image) {
+      productImage.src = getUrl() + product.image.url;
+    }
 
     const productPrice = document.createElement('p');
     productPrice.innerText = product.price + ' $';
 
     const detailsButton = document.createElement('button');
     detailsButton.innerText = 'Details';
-    detailsButton.className = 'details-button';
     detailsButton.addEventListener('click', () => {
       window.location = '/client/html/details.html?id=' + product.id;
     });

@@ -67,28 +67,13 @@
   }
 }
 
-#search-input {
-  border-color: $secondary-color;
-  border-radius: 5px;
-  font-family: $font-secondary;
-  outline: none;
-  padding: 0;
-  box-shadow: none;
-
-  @media only screen and (max-width: 800px) {
-    flex-grow: 1;
-  }
-}
-
-#search-button {
+button {
   border: none;
   background: none;
-
-  & > i {
-    color: $secondary-color;
-    font-size: 24px;
-    &:hover {
-      text-decoration: underline;
-    }
+  color: $secondary-color;
+  font-size: 18px;
+  font-weight: bolder;
+  &:hover {
+    text-decoration: underline;
   }
 }

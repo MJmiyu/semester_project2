@@ -7,6 +7,12 @@ nav {
   justify-content: space-between;
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 nav a {
   display: inline;
   text-decoration: none;
@@ -27,6 +33,18 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
 }
+@media only screen and (max-width: 800px) {
+  #cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#cart-container > p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+}
 #cart-container > div {
   display: flex;
   flex-direction: column;
@@ -35,6 +53,12 @@ nav a:hover {
   box-shadow: grey 1px 1px 1px 1px;
   border-radius: 5px;
   background-color: #fefefe80;
+}
+@media only screen and (max-width: 800px) {
+  #cart-container > div {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 #cart-container > div > h2 {
   font-family: "Noto Sans JP", sans-serif;
@@ -63,10 +87,30 @@ nav a:hover {
   text-decoration: underline;
 }
 
+#checkout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
 #total-price {
   font-size: 26px;
   font-family: "Roboto", sans-serif;
   color: #0517e8;
+}
+
+#checkout-button {
+  border: none;
+  background: none;
+  color: #b32271;
+  font-size: 18px;
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+}
+#checkout-button:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=cart.css.map */

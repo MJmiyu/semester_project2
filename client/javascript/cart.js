@@ -32,6 +32,15 @@ function renderCart() {
 
   let totalPrice = 0;
 
+  if (cartProducts.length === 0) {
+    const placeholder = document.createElement('span');
+    cartContainer.appendChild(placeholder);
+
+    const emptyCart = document.createElement('p');
+    emptyCart.innerText = 'Cart Is Empty';
+    cartContainer.appendChild(emptyCart);
+  }
+
   for (let i = 0; i < cartProducts.length; i++) {
     const product = cartProducts[i];
 

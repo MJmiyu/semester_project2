@@ -1,5 +1,6 @@
 body {
   background-color: #efefef;
+  box-sizing: border-box;
 }
 
 nav {
@@ -28,41 +29,45 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.featured-product-image {
-  width: 200px;
-}
-
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#featured-products {
-  color: #0517e8;
+#form {
   display: flex;
   justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Noto Sans JP", sans-serif;
 }
-#featured-products div {
-  max-width: 60%;
+#form > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffffaa;
-  margin-top: 25px;
-  border-radius: 5px;
-  padding: 15px;
-  font-family: "Noto Sans JP", sans-serif;
-}
-@media only screen and (max-width: 800px) {
-  #featured-products div {
-    width: 100%;
-    max-width: none;
-    margin: 25px;
-  }
-}
-#featured-products div img {
-  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-/*# sourceMappingURL=homepage.css.map */
+input {
+  border: solid 2px;
+  border-color: #b32271;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background: none;
+  color: #b32271;
+  font-size: 18px;
+  font-weight: bolder;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+/*# sourceMappingURL=login.css.map */

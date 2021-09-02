@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../css/edit.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Products</title>
+  </head>
+  <body>
+    <nav>
+      <a href="products.html">Products</a>
+      <a href="add.html">Add</a>
+      <button id="logout">Logout</button>
+    </nav>
+    <form id="product-form">
+      <h3>Title</h3>
+      <input type="text" id="product-title-input" />
+      <h3>Featured</h3>
+      <input type="checkbox" id="product-featured-checkbox" />
+      <h3>Image</h3>
+      <img id="product-image" />
+      <input type="file" id="product-image-input" />
+      <h3>Description</h3>
+      <textarea rows="10" cols="50" id="product-description-input"></textarea>
+      <h3>Price</h3>
+      <input type="text" id="product-price-input" />
+      <div>
+        <button role="submit">Save</button>
+        <button id="delete" type="button">Delete</button>
+      </div>
+    </form>
+  </body>
+  <script type="module" src="../javascript/edit.js"></script>
+</html>
