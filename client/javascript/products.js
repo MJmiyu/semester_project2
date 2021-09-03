@@ -34,7 +34,7 @@ function renderProducts() {
   productsContainer.innerHTML = '';
 
   for (let i = 0; i < searchProducts.length; i++) {
-    const product = products[i];
+    const product = searchProducts[i];
 
     const productContainer = document.createElement('div');
 

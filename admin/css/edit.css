@@ -44,6 +44,11 @@ nav a:hover {
   margin-bottom: 15px;
   font-family: "Noto Sans JP", sans-serif;
 }
+@media only screen and (max-width: 800px) {
+  #product-form > * {
+    width: 100%;
+  }
+}
 #product-form > h3 {
   margin-bottom: 5px;
 }
