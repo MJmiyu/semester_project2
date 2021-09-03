@@ -27,6 +27,11 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+nav img {
+  display: flex;
+  max-width: 200px;
+  justify-content: center;
+}
 
 #products {
   display: grid;
@@ -83,14 +88,10 @@ nav a:hover {
 }
 
 #search-container {
-  margin-left: auto;
-}
-@media only screen and (max-width: 800px) {
-  #search-container {
-    width: 100%;
-    margin: 0;
-    display: flex;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
 #search-input {

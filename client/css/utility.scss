@@ -33,4 +33,10 @@ nav {
       text-decoration: underline;
     }
   }
+
+  img {
+    display: flex;
+    max-width: 200px;
+    justify-content: center;
+  }
 }
